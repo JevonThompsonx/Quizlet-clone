@@ -8,7 +8,6 @@ const Nav = () => {
   // Define links in an array of objects
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
   ];
 
   const toggleMenu = () => {
@@ -19,7 +18,7 @@ const Nav = () => {
     <nav className="bg-gray-800 p-4 sticky w-screen top-0 z-10 h-12">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo/Brand */}
-        <a href='https://github.com/JevonThompsonx' className="text-white font-bold">WebDevJev</a>
+        <a href='https://github.com/JevonThompsonx' className="text-white font-bold">Quizler</a>
         {/* Desktop Links */}
         <div className="hidden sm:flex space-x-4">
           {navLinks.map(({ path, label }) => (
