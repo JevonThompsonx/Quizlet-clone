@@ -1,13 +1,14 @@
 // src/components/Nav.jsx
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { Context } from "../App"
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { loggedIn } = useContext(Context)
   // Define links in an array of objects
   const navLinks = [
-    { path: '/', label: 'Home' },
+    { path: '/sign_up', label: 'Sign up' },
+    { path: '/login', label: 'Login' },
   ];
 
   const toggleMenu = () => {
@@ -15,7 +16,8 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4 sticky w-screen top-0 z-10 h-12">
+
+    < nav className="bg-gray-800 p-4 sticky w-screen top-0 z-10 h-12" >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo/Brand */}
         <a href='https://github.com/JevonThompsonx' className="text-white font-bold">Quizler</a>
@@ -61,7 +63,7 @@ const Nav = () => {
         className={`${isOpen ? 'block' : 'hidden'
           } sm:hidden bg-gray-800 text-white space-y-4 p-4`}
       >
-        {navLinks.map(({ path, label }) => (
+        {loggedIn == false && navLinks.map(({ path, label }) => (
           <NavLink
             key={path}
             to={path}
@@ -72,7 +74,7 @@ const Nav = () => {
           </NavLink>
         ))}
       </div>
-    </nav>
+    </nav >
   );
 };
 
