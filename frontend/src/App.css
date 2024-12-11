@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .quizler-background {
-  background-image: url('/public/images/quizler-background.webp');
+  background-image: url('/images/quizler-background.webp');
   background-size: cover;
   height: 100vh;
   overflow: hidden;
