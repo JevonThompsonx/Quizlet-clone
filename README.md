@@ -27,3 +27,7 @@
 [] login with password hash and auth 
 [] Card creation 
 [] Card edits 
+[] image upload for profile and quizes
+[] view of all uploaded quiz
+[] individual quiz page 
+[] diff quiz types
