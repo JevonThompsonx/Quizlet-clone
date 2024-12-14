@@ -1,4 +1,4 @@
-# 
+# Quizler - Quizlet clone 
 
 ## How to 
 - `bun run install:all` 
@@ -13,6 +13,17 @@
 - Target / for frontend
 - Uses proxy to auto route to backend if link starts with "/api"
 
-## Personal use 
-- Most likely using vercel for launching frontend 
-- Render for launching backend
+### To do list 
+[] Design frontend 
+  [] Landing page design 
+  [] Cards design 
+  [] Card show page 
+[] Design backend (backend should be auth only) 
+  [] figute out password hashibg 
+  [] figure out jwt
+
+### Feauture list 
+[] sqlite3 or turso for db management 
+[] login with password hash and auth 
+[] Card creation 
+[] Card edits 
