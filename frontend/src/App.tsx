@@ -1,8 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About"
-import NotFound from "./pages/NotFound"
+import { Home, About, NotFound } from "./pages/index.tsx";
+import { Login } from "./components/index.tsx"
 import { useState, createContext, useRef } from "react"
 
 export const Context = createContext<ContextType | null>(null)
@@ -20,6 +19,8 @@ export default function App() {
             </Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/not_found" element={<NotFound />}>
+            </Route>
+            <Route path="/login" element={<Login />}>
             </Route>
           </Routes>
         </div>

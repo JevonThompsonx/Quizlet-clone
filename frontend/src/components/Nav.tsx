@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Context } from "../App"
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  //@ts-ignore
   const { loggedIn } = useContext(Context)
   // Define links in an array of objects
   const navLinks = [
