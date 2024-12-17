@@ -4,12 +4,13 @@ import { Home, About, NotFound } from "./pages/index.tsx";
 import { Login } from "./components/index.tsx"
 import { useState, createContext, useRef } from "react"
 
-export const Context = createContext<ContextType | null>(null)
+export const Context = createContext<NullableContextType>(null)
 export default function App() {
   const email_input = useRef<HTMLInputElement>(null)
   const [loggedIn, setLoggedIn] = useState<boolean>(false)
   const [loggingIn, setLoggingIn] = useState<boolean>(false)
-  const ContextValue: ContextType = { loggedIn, setLoggedIn, email_input, loggingIn, setLoggingIn }
+  const [welcomePage, setWelcomePage] = useState<boolean>(true)
+  const ContextValue: ContextType = { welcomePage, setWelcomePage, loggedIn, setLoggedIn, email_input, loggingIn, setLoggingIn }
   return (
     <BrowserRouter>
       <Context.Provider value={ContextValue}>
