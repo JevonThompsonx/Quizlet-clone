@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, About, NotFound } from "./pages/index.tsx";
+import { About, NotFound, Welcome } from "./pages/index.tsx";
 import { Login } from "./components/index.tsx"
 import { useState, createContext, useRef } from "react"
 
@@ -16,7 +16,7 @@ export default function App() {
       <Context.Provider value={ContextValue}>
         <div className="quizler-background">
           <Routes>
-            <Route path="/" element={<Home />}>
+            <Route path="/" element={<Welcome />}>
             </Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/not_found" element={<NotFound />}>
