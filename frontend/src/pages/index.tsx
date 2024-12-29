@@ -1,6 +1,6 @@
 import About from "./About"
-import Home from "./Home"
 import NotFound from "./NotFound"
 import Welcome from "./Welcome"
+import Login from "./Login"
 
-export { About, Home, NotFound, Welcome }
+export { About, NotFound, Welcome, Login }

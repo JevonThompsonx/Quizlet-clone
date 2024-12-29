@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, NotFound, Welcome } from "./pages/index.tsx";
-import { Login } from "./components/index.tsx"
+import { Login } from "./pages/index.tsx"
 import { useState, createContext, useRef } from "react"
 
 export const Context = createContext<NullableContextType>(null)

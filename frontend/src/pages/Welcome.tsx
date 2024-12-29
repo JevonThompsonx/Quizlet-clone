@@ -15,7 +15,7 @@ const Welcome = () => {
             <div className="Input-home flex flex-col space-y-2">
               <div className="email-div flex flex-row justify-evenly items-center space-x-2">
                 <label htmlFor="email-input">email: </label>
-                <input id="email-input" className="rounded-xl p-2" type="text" ref={email_input} />
+                <input id="email-input" className="rounded-xl p-1" type="text" ref={email_input} />
               </div>
               <div className="flex flex-row justify-center items-center space-x-2">
                 <button className="rounded-2xl bg-amber-300 text-white p-2">

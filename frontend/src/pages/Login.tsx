@@ -11,18 +11,18 @@ const Login = () => {
       <Nav />
       <main className="login-home flex flex-col justify-evenly items-center h-full w-full">
 
-        <div className="flex flex-col justify-evenly items-center" >
-          <h1>Login to Quizler</h1>
-          <p>Welcome back! Please enter your credentials.</p>
+        <div className="flex flex-col justify-evenly items-center space-y-2" >
+          <h1 className="text-3xl">Login to Quizler</h1>
+          <p className="text-lg"> Welcome back! Please enter your credentials.</p>
         </div>
-        <form>
-          <div >
-            <label htmlFor="email" />
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <form className="flex flex-col justify-evenly items-center space-y-4">
+          <div className="flex flex-row justify-evenly items-center space-x-2">
+            <label htmlFor="email">Email: </label>
+            <input className="p-1" type="email" id="email" name="email" placeholder="Enter your email" required />
           </div>
-          <div >
-            <label htmlFor="password"></label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+          <div className="flex flex-row justify-evenly items-center space-x-2">
+            <label htmlFor="password">Password: </label>
+            <input className="p-1" type="password" id="password" name="password" placeholder="Enter your password" required />
           </div>
           <button className="p-2 bg-blue-400 rounded-md border-black border-2" type="submit" >Login</button>
         </form>
