@@ -1,4 +1,4 @@
-import { Nav, Welcome, Login } from "../components/index.tsx"
+import { Nav, Login } from "../components/index.tsx"
 import { Context } from "../App.tsx"
 import { useContext } from "react"
 export default function Home() {
@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <>
       <Nav />
-      {welcomePage === true && <Welcome />}
       {loggingIn === true && loggedIn == false && Login}
 
     </>)
