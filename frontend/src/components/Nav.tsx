@@ -8,6 +8,7 @@ const Nav = () => {
   const { loggedIn } = useContext(Context)
   // Define links in an array of objects
   const navLinks = [
+    { path: '/', label: "Home" },
     { path: '/sign_up', label: 'Sign up' },
     { path: '/login', label: 'Login' },
   ];
