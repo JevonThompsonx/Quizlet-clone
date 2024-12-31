@@ -18,12 +18,17 @@ const Welcome = () => {
                 <input id="email-input" className="rounded-xl p-1" type="text" ref={email_input} />
               </div>
               <div className="flex flex-row justify-center items-center space-x-2">
-                <button className="rounded-2xl bg-amber-300 text-white p-2">
+                <a href="sign_up" className="rounded-2xl bg-amber-300 text-white p-2">
                   Sign up
-                </button>
-                <button className="rounded-2xl bg-amber-300 text-white p-2">
+                </a>
+                <a className="rounded-2xl bg-amber-300 text-white p-2" href="/login">
                   Login
-                </button>
+                </a>
+                {
+                  //To do: 
+                  //1. change login and sign up to buttons that 
+                  //    trigger capturing given email then going to login page
+                }
               </div>
             </div>
           </div>
