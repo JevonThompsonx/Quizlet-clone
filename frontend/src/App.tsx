@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, NotFound, Welcome } from "./pages/index.tsx";
-import { Login } from "./pages/index.tsx"
+import { Login, SignUp } from "./pages/index.tsx"
 import { useState, createContext, useRef } from "react"
 
 export const Context = createContext<NullableContextType>(null)
@@ -22,6 +22,8 @@ export default function App() {
             <Route path="/not_found" element={<NotFound />}>
             </Route>
             <Route path="/login" element={<Login />}>
+            </Route>
+            <Route path="/sign_up" element={<SignUp />}>
             </Route>
           </Routes>
         </div>
